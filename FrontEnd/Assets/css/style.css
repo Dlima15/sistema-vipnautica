@@ -1,0 +1,468 @@
+/* Importando as fontes */
+body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Para evitar barra de rolagem ao animar */
+}
+
+/* Container principal */
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* Estilização das formas geométricas */
+.shape {
+    position: absolute;
+    background-color: #0C0434;
+    filter: blur(10px);
+    z-index: -1;
+    animation: floatAnimation 5s infinite alternate ease-in-out;
+}
+
+/* Formas geométricas animadas */
+.shape1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+}
+
+.shape2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    bottom: -50px;
+    right: -50px;
+}
+
+/* Animação das formas geométricas */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/* Seção principal */
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Área esquerda */
+.esquerda {
+    width: 50%;
+}
+
+h1 {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 22px;
+    color: #333;
+}
+
+h1 span {
+    color: #0C0434;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Inputs */
+label {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #0C0434;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #10054E;
+}
+
+/* Área direita (logo) */
+.direita {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+    }
+
+    .logo {
+        max-width: 150px;
+        margin-top: 20px;
+    }
+}
+
+/* ---------------------- */
+/* 🛶 ANIMAÇÃO DOS BARCOS */
+/* ---------------------- */
+.boat {
+    position: absolute;
+    width: 40px;
+    opacity: 0.7;
+    animation: boatFloat 10s infinite linear;
+}
+
+/* Criando diferentes direções para os barcos */
+.boat1 { top: 20%; left: -50px; animation-delay: 0s; }
+.boat2 { top: 50%; left: -70px; animation-delay: 2s; }
+.boat3 { top: 80%; left: -90px; animation-delay: 4s; }
+
+/* Animação dos barquinhos navegando */
+@keyframes boatFloat {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translateX(100vw) translateY(-10px);
+    }
+    100% {
+        transform: translateX(200vw) translateY(0px);
+    }
+}
+/* Importando as fontes */
+body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Para evitar barra de rolagem ao animar */
+}
+
+/* Container principal */
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* Estilização das formas geométricas */
+.shape {
+    position: absolute;
+    background-color: #0C0434;
+    filter: blur(10px);
+    z-index: -1;
+    animation: floatAnimation 5s infinite alternate ease-in-out;
+}
+
+/* Formas geométricas animadas */
+.shape1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+}
+
+.shape2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    bottom: -50px;
+    right: -50px;
+}
+
+/* Animação das formas geométricas */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/* Seção principal */
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Área esquerda */
+.esquerda {
+    width: 50%;
+}
+
+h1 {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 22px;
+    color: #333;
+}
+
+h1 span {
+    color: #0C0434;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Inputs */
+label {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #0C0434;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #10054E;
+}
+
+/* Área direita (logo) */
+.direita {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+    }
+
+    .logo {
+        max-width: 150px;
+        margin-top: 20px;
+    }
+}
+
+/* ---------------------- */
+/* 🛶 ANIMAÇÃO DOS BARCOS */
+/* ---------------------- */
+.boat {
+    position: absolute;
+    width: 40px;
+    opacity: 0.7;
+    animation: boatFloat 10s infinite linear;
+}
+
+/* Criando diferentes direções para os barcos */
+.boat1 { top: 20%; left: -50px; animation-delay: 0s; }
+.boat2 { top: 50%; left: -70px; animation-delay: 2s; }
+.boat3 { top: 80%; left: -90px; animation-delay: 4s; }
+
+/* Animação dos barquinhos navegando */
+@keyframes boatFloat {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translateX(100vw) translateY(-10px);
+    }
+    100% {
+        transform: translateX(200vw) translateY(0px);
+    }
+}
+
+
+/* Estilos globais */
+body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Página de Login */
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  Página Geral xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.tela-geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.tela-geral .filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tela-geral .filtro-item {
+    background: #ebebeb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.tela-geral .tabela-foto {
+    width: 80px;  /* Largura fixa */
+    height: 60px; /* Altura fixa */
+    object-fit: cover; /* Mantém o aspecto e corta se necessário */
+    border-radius: 5px; /* Bordas arredondadas para um design mais bonito */
+}
+
+.tela-geral .logo {
+    margin-top: 0px; /* Remove espaço extra acima */
+    padding-top: 0px; /* Remove espaçamento interno extra */
+    display: flex;
+    justify-content: center; /* Centraliza a logo */
+    align-items: center; /* Mantém alinhado verticalmente */
+    height: auto; /* Mantém a altura mínima necessária */
+}
+
+
+.tela-geral .filtro-item:hover {
+    background: #dcdcdc;
+}
+
+.tela-geral .tabela-container {
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 100vw; /* Garante que não ultrapasse a largura da tela */
+    overflow-x: auto;
+}
+
+.tela-geral .tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tela-geral .tabela th, .tela-geral .tabela td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.tela-geral .tabela th {
+    background: #ddd;
+}
+
+/* Animações */
+.fundo-animado {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #000080;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: mover 10s infinite alternate ease-in-out;
+}
+
+@keyframes mover {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(50px);
+    }
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}

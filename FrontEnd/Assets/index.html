@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema VIP Náutica</title>
+    <title>Página Geral</title>
+    <link rel="stylesheet" href="/FrontEnd/Assets/css/style.css">
 </head>
-<body>
-    
+<body class="tela-geral">
+    <header>
+        <img src="./Img/1-Logomarca VIP Azul.png" class="logo" alt="Logo VIP Náutica">
+    </header>
+    <section class="filtros">
+        <div class="filtro"><input type="text" placeholder="Estaleiro"></div>
+        <div class="filtro"><input type="text" placeholder="Modelo"></div>
+        <div class="filtro"><input type="text" placeholder="Ano"></div>
+        <div class="filtro"><input type="text" placeholder="Motor"></div>
+        <div class="filtro"><input type="text" placeholder="Combustível"></div>
+        <div class="filtro"><input type="text" placeholder="Horas"></div>
+        <div class="filtro"><input type="text" placeholder="Valor"></div>
+        <div class="filtro"><input type="text" placeholder="Captador"></div>
+        <div class="filtro"><input type="text" placeholder="Proprietário"></div>
+        <div class="filtro"><input type="text" placeholder="Local"></div>
+        <div class="filtro"><input type="text" placeholder="De R$"></div>
+        <div class="filtro"><input type="text" placeholder="Até R$"></div>
+    </section>
+    <section class="tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>FOTO</th>
+                    <th>SKU</th>
+                    <th>ESTALEIRO</th>
+                    <th>MODELO</th>
+                    <th>VALOR</th>
+                    <th>ANO</th>
+                    <th>MOTOR</th>
+                    <th>COMBUSTÍVEL</th>
+                    <th>HORAS</th>
+                    <th>PROPRIETÁRIO</th>
+                    <th>LOCAL</th>
+                    <th>ANÚNCIO</th>
+                    <th>ADMIN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de exemplo -->
+                <tr>
+                    <td><img src="./Img/WhatsApp Image 2025-02-26 at 10.01.01.jpeg" class="tabela-foto" alt="Foto"></td>
+                    <td>12345</td>
+                    <td>Nx</td>
+                    <td>Nx 360</td>
+                    <td>R$ 890.000</td>
+                    <td>2021</td>
+                    <td>2 X MERCRUISER 300 HP BRAVO 3</td>
+                    <td>Gasolina</td>
+                    <td>192</td>
+                    <td>Oeste Marine</td>
+                    <td>Marina Astúrias Guarujá</td>
+                    <td><a href="ST">ST</a> <a href="">ML</a></td>
+                    <td><button>✏️</button> <button>🗑️</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 </body>
 </html>
