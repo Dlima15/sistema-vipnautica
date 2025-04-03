@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre sua embarcação</title>
+    <title>Cadastro de Embarcação</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="logo">
+            <img src="./Img/1-Logomarca VIP Azul.png" alt="VIP Náutica">
+        </div>
+        <h2>Preencha os dados para cadastrar a embarcação!</h2>
+        
+        <form class="formulario">
+            <div class="input-group">
+                <input type="text" placeholder="Estaleiro">
+                <input type="text" placeholder="Motor">
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Modelo">
+                <input type="text" placeholder="Proprietário">
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Ano">
+                <input type="text" placeholder="Local">
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Valor">
+                <input type="text" placeholder="Combustível">
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Captador">
+                <input type="text" placeholder="Horas">
+            </div>
+            <div class="file-input">
+                <label for="foto">Foto de capa</label>
+                <input type="file" id="foto">
+            </div>
+            <button type="submit" class="btn">CADASTRAR</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const inputs = document.querySelectorAll("input");
+            inputs.forEach(input => {
+                input.addEventListener("focus", () => input.classList.add("focus"));
+                input.addEventListener("blur", () => input.classList.remove("focus"));
+            });
+        });
+    </script>
 </body>
 </html>
