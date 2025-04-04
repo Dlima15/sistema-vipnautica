@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edição de Embarcação</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./Js/main.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -12,33 +13,35 @@
             <img src="./Img/1-Logomarca VIP Azul.png" alt="VIP Náutica">
         </div>
         <h2>Preencha os dados para atualizar a embarcação!</h2>
-        
+
         <form class="formulario">
             <div class="input-group">
-                <input type="text" placeholder="Estaleiro">
-                <input type="text" placeholder="Motor">
+                <input type="text" id="estaleiro" placeholder="Estaleiro">
+                <input type="text" id="motor" placeholder="Motor">
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Modelo">
-                <input type="text" placeholder="Proprietário">
+                <input type="text" id="modelo" placeholder="Modelo">
+                <input type="text" id="proprietario" placeholder="Proprietário">
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Ano">
-                <input type="text" placeholder="Local">
+                <input type="text" id="ano" placeholder="Ano">
+                <input type="text" id="local" placeholder="Local">
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Valor">
-                <input type="text" placeholder="Combustível">
+                <input type="text" id="valor" placeholder="Valor">
+                <input type="text" id="combustivel" placeholder="Combustível">
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Captador">
-                <input type="text" placeholder="Horas">
+                <input type="text" id="captador" placeholder="Captador">
+                <input type="text" id="horas" placeholder="Horas">
             </div>
             <div class="file-input">
                 <label for="foto">Foto de capa</label>
                 <input type="file" id="foto">
             </div>
-            <button type="submit" class="btn">Atualizar anuncio</button>
+            <input type="hidden" id="index">
+            <button type="submit" class="btn">Atualizar anúncio</button>
+            <button type="button" onclick="window.location.href='index.html'" class="btn">Voltar</button>
         </form>
     </div>
 

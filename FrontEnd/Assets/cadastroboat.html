@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Embarcação</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./Js/main.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -13,43 +14,36 @@
         </div>
         <h2>Preencha os dados para cadastrar a embarcação!</h2>
         
-        <form class="formulario">
+        <form class="formulario" id="formCadastro">
             <div class="input-group">
-                <input type="text" placeholder="Estaleiro">
-                <input type="text" placeholder="Motor">
+                <input type="text" id="estaleiro" placeholder="Estaleiro" name="estaleiro" required>
+                <input type="text" id="motor" placeholder="Motor" name="motor" required>
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Modelo">
-                <input type="text" placeholder="Proprietário">
+                <input type="text" id="modelo" placeholder="Modelo" name="modelo" required>
+                <input type="text" id="proprietario" placeholder="Proprietário" name="proprietario" required>
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Ano">
-                <input type="text" placeholder="Local">
+                <input type="text" id="ano" placeholder="Ano" name="ano" required>
+                <input type="text" id="local" placeholder="Local" name="local" required>
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Valor">
-                <input type="text" placeholder="Combustível">
+                <input type="text" id="valor" placeholder="Valor" name="valor" required>
+                <input type="text" id="combustivel" placeholder="Combustível" name="combustivel" required>
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Captador">
-                <input type="text" placeholder="Horas">
+                <input type="text" id="captador" placeholder="Captador" name="captador" required>
+                <input type="text" id="horas" placeholder="Horas" name="horas" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="anuncio" placeholder="Link do Anúncio (ML)" name="anuncio">
             </div>
             <div class="file-input">
-                <label for="foto">Foto de capa</label>
-                <input type="file" id="foto">
+                <label for="foto">Foto de capa:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
             </div>
             <button type="submit" class="btn">CADASTRAR</button>
         </form>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const inputs = document.querySelectorAll("input");
-            inputs.forEach(input => {
-                input.addEventListener("focus", () => input.classList.add("focus"));
-                input.addEventListener("blur", () => input.classList.remove("focus"));
-            });
-        });
-    </script>
 </body>
 </html>

@@ -425,6 +425,14 @@ body {
     transition: 0.3s;
 }
 
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+
 .botao-cadastro:hover {
     background-color: #008833;
 }

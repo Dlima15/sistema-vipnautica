@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Geral</title>
     <link rel="stylesheet" href="/FrontEnd/Assets/css/style.css">
+    <script src="./Js/main.js" defer></script> <!-- Aponta pro JS correto -->
 </head>
 <body class="tela-geral">
     <header>
         <img src="./Img/1-Logomarca VIP Azul.png" class="logo" alt="Logo VIP Náutica">
+        <div id="bemVindo" class="bem-vindo"></div> <!-- Mostra o nome do usuário logado -->
     </header>
 
     <!-- Seção de Filtros -->
@@ -27,9 +29,7 @@
         <div class="filtro"><input type="text" placeholder="Até R$"></div>
 
         <!-- Botão de busca -->
-        <button class="botao-busca">
-            🔍 Buscar
-        </button>
+        <button class="botao-busca">🔍 Buscar</button>
     </section>
 
     <!-- Botão para cadastrar nova embarcação -->
@@ -57,25 +57,8 @@
                     <th>ADMIN</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td><img src="./Img/WhatsApp Image 2025-02-26 at 10.01.01.jpeg" class="tabela-foto" alt="Foto"></td>
-                    <td>12345</td>
-                    <td>Nx</td>
-                    <td>Nx 360</td>
-                    <td>R$ 890.000</td>
-                    <td>2021</td>
-                    <td>2 X MERCRUISER 300 HP BRAVO 3</td>
-                    <td>Gasolina</td>
-                    <td>192</td>
-                    <td>Oeste Marine</td>
-                    <td>Marina Astúrias Guarujá</td>
-                    <td><a href="ST">ST</a> <a href="">ML</a></td>
-                    <td><button>✏️</button> <button>🗑️</button></td>
-                </tr>
-            </tbody>
+            <tbody></tbody> <!-- Limpo: será preenchido automaticamente pelo script -->
         </table>
     </section>
-
 </body>
 </html>
