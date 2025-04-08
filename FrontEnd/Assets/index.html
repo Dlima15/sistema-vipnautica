@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Geral</title>
     <link rel="stylesheet" href="/FrontEnd/Assets/css/style.css">
-    <script src="./Js/main.js" defer></script> <!-- Aponta pro JS correto -->
+    <script src="./Js/main.js" defer></script>
 </head>
+
 <body class="tela-geral">
+
     <header>
         <img src="./Img/1-Logomarca VIP Azul.png" class="logo" alt="Logo VIP Náutica">
-        <div id="bemVindo" class="bem-vindo"></div> <!-- Mostra o nome do usuário logado -->
+        <div id="bemVindo" class="bem-vindo"></div>
+        <button id="btnLogin" class="botao-login" onclick="window.location.href='login.html'">Login</button>
     </header>
 
     <!-- Seção de Filtros -->
     <section class="filtros">
-        <div class="filtro"><input type="text" placeholder="Estaleiro"></div>
-        <div class="filtro"><input type="text" placeholder="Modelo"></div>
-        <div class="filtro"><input type="text" placeholder="Ano"></div>
-        <div class="filtro"><input type="text" placeholder="Motor"></div>
-        <div class="filtro"><input type="text" placeholder="Combustível"></div>
-        <div class="filtro"><input type="text" placeholder="Horas"></div>
-        <div class="filtro"><input type="text" placeholder="Valor"></div>
-        <div class="filtro"><input type="text" placeholder="Captador"></div>
-        <div class="filtro"><input type="text" placeholder="Proprietário"></div>
-        <div class="filtro"><input type="text" placeholder="Local"></div>
-        <div class="filtro"><input type="text" placeholder="De R$"></div>
-        <div class="filtro"><input type="text" placeholder="Até R$"></div>
+        <div class="filtro"><input type="text" id="filtroEstaleiro" placeholder="Estaleiro"></div>
+        <div class="filtro"><input type="text" id="filtroModelo" placeholder="Modelo"></div>
+        <div class="filtro"><input type="text" id="filtroAno" placeholder="Ano"></div>
+        <div class="filtro"><input type="text" id="filtroMotor" placeholder="Motor"></div>
+        <div class="filtro"><input type="text" id="filtroCombustivel" placeholder="Combustível"></div>
+        <div class="filtro"><input type="text" id="filtroHoras" placeholder="Horas"></div>
+        <div class="filtro"><input type="text" id="filtroValor" placeholder="Valor"></div>
+        <div class="filtro"><input type="text" id="filtroCaptador" placeholder="Captador"></div>
+        <div class="filtro"><input type="text" id="filtroProprietario" placeholder="Proprietário"></div>
+        <div class="filtro"><input type="text" id="filtroLocal" placeholder="Local"></div>
+        <div class="filtro"><input type="text" id="filtroPrecoMin" placeholder="De R$"></div>
+        <div class="filtro"><input type="text" id="filtroPrecoMax" placeholder="Até R$"></div>
 
-        <!-- Botão de busca -->
-        <button class="botao-busca">🔍 Buscar</button>
+        <button class="botao-busca" id="btnBuscar" onclick="filtrarBarcos()">🔍 Buscar</button>
     </section>
 
-    <!-- Botão para cadastrar nova embarcação -->
     <div class="cadastro-container">
-        <button class="botao-cadastro">➕ Cadastrar Nova Embarcação</button>
+        <button class="botao-cadastro" id="btnCadastrar" onclick="window.location.href='cadastro.html'">
+            ➕ Cadastrar Nova Embarcação
+        </button>
     </div>
 
     <!-- Seção da Tabela -->
@@ -54,11 +58,22 @@
                     <th>PROPRIETÁRIO</th>
                     <th>LOCAL</th>
                     <th>ANÚNCIO</th>
-                    <th>ADMIN</th>
                 </tr>
             </thead>
-            <tbody></tbody> <!-- Limpo: será preenchido automaticamente pelo script -->
+            <tbody id="corpoTabela">
+                <!-- Conteúdo gerado via JS -->
+            </tbody>
         </table>
     </section>
+
 </body>
+
+<script>
+    window.onload = function () {
+        carregarBarcos();
+        mostrarUsuario();
+    }
+</script>
+
 </html>
+
