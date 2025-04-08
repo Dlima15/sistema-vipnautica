@@ -39,6 +39,8 @@ function mostrarUsuario() {
     }
 }
 
+
+
 // Aplicar restrições visuais se não for admin
 function aplicarRestricoesParaNaoAdmin() {
     const isAdmin = localStorage.getItem("isAdmin") === "true";
@@ -57,6 +59,38 @@ function aplicarRestricoesParaNaoAdmin() {
         if (btnCadastro) btnCadastro.style.display = "none";
     }
 }
+
+// ======================= INICIO FUNÇÃO FILTRAR TABELA =======================
+
+function filtrarBarcos() {
+    const estaleiro = document.getElementById("filtroEstaleiro").value.toLowerCase();
+    const modelo = document.getElementById("filtroModelo").value.toLowerCase();
+    const ano = document.getElementById("filtroAno").value.toLowerCase();
+    const motor = document.getElementById("filtroMotor").value.toLowerCase();
+    const combustivel = document.getElementById("filtroCombustivel").value.toLowerCase();
+    const horas = document.getElementById("filtroHoras").value.toLowerCase();
+    const local = document.getElementById("filtroLocal").value.toLowerCase();
+    const valorMin = parseFloat(document.getElementById("filtroPrecoMin").value) || 0;
+    const valorMax = parseFloat(document.getElementById("filtroPrecoMax").value) || Infinity;
+
+    const dadosFiltrados = dadosJson.filter(item => {
+        const valorItem = parseFloat(item.valor.replace("R$ ", "").replace(/\./g, "").replace(",", "."));
+
+        return item.estaleiro.toLowerCase().includes(estaleiro) &&
+               item.modelo.toLowerCase().includes(modelo) &&
+               item.ano.toLowerCase().includes(ano) &&
+               item.motor.toLowerCase().includes(motor) &&
+               item.combustivel.toLowerCase().includes(combustivel) &&
+               item.horas.toLowerCase().includes(horas) &&
+               item.local.toLowerCase().includes(local) &&
+               valorItem >= valorMin &&
+               valorItem <= valorMax;
+    });
+
+    exibirBarcos(dadosFiltrados);  // função que mostra os barcos filtrados na tela
+}
+
+// ======================= FIM FUNÇÃO FILTRAR TABELA =======================
 
 // Função para buscar os dados JSON e montar a tabela
 async function carregarEmbarcacoes() {
@@ -88,10 +122,14 @@ async function carregarEmbarcacoes() {
             tabela.appendChild(tr);
         });
 
+         // Aplicar restrições depois de carregar os barcos
+         aplicarRestricoesParaNaoAdmin();
+
     } catch (error) {
         console.error("Erro ao carregar embarcações:", error);
     }
 }
+
 
 // Chamar ao carregar a página
 document.addEventListener("DOMContentLoaded", () => {
