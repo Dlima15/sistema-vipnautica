@@ -5,6 +5,9 @@ const usuarios = [
     { nome: "raquel", senha: "toninha1002", admin: false }
 ];
 
+// Variável global para guardar os dados do JSON
+let dadosJson = [];
+
 // Validar login
 function validarLogin(event) {
     event.preventDefault();
@@ -38,8 +41,6 @@ function mostrarUsuario() {
         header.appendChild(barra);
     }
 }
-
-
 
 // Aplicar restrições visuais se não for admin
 function aplicarRestricoesParaNaoAdmin() {
@@ -87,10 +88,38 @@ function filtrarBarcos() {
                valorItem <= valorMax;
     });
 
-    exibirBarcos(dadosFiltrados);  // função que mostra os barcos filtrados na tela
+    exibirBarcos(dadosFiltrados);
 }
 
 // ======================= FIM FUNÇÃO FILTRAR TABELA =======================
+
+// Função que exibe os barcos na tabela
+function exibirBarcos(lista) {
+    const tabela = document.getElementById("corpoTabela");
+    if (!tabela) return;
+    tabela.innerHTML = "";
+
+    lista.forEach(barco => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td><img src="${barco.foto}" width="100"></td>
+            <td>${barco.sku}</td>
+            <td>${barco.estaleiro}</td>
+            <td>${barco.modelo}</td>
+            <td>${barco.valor}</td>
+            <td>${barco.ano}</td>
+            <td>${barco.motor}</td>
+            <td>${barco.combustivel}</td>
+            <td>${barco.horas}</td>
+            <td>${barco.proprietario}</td>
+            <td>${barco.local}</td>
+            <td><a href="${barco.anuncio}" target="_blank">Ver Anúncio</a></td>
+        `;
+        tabela.appendChild(tr);
+    });
+
+    aplicarRestricoesParaNaoAdmin();
+}
 
 // Função para buscar os dados JSON e montar a tabela
 async function carregarEmbarcacoes() {
@@ -100,38 +129,15 @@ async function carregarEmbarcacoes() {
     try {
         const response = await fetch('./js/barcos.json');
         const embarcacoes = await response.json();
-
-        tabela.innerHTML = "";
-
-        embarcacoes.forEach(barco => {
-            const tr = document.createElement("tr");
-            tr.innerHTML = `
-                <td><img src="${barco.foto}" width="100"></td>
-                <td>${barco.sku}</td>
-                <td>${barco.estaleiro}</td>
-                <td>${barco.modelo}</td>
-                <td>${barco.valor}</td>
-                <td>${barco.ano}</td>
-                <td>${barco.motor}</td>
-                <td>${barco.combustivel}</td>
-                <td>${barco.horas}</td>
-                <td>${barco.proprietario}</td>
-                <td>${barco.local}</td>
-                <td><a href="${barco.anuncio}" target="_blank">Ver Anúncio</a></td>
-            `;
-            tabela.appendChild(tr);
-        });
-
-         // Aplicar restrições depois de carregar os barcos
-         aplicarRestricoesParaNaoAdmin();
-
+        dadosJson = embarcacoes; // armazena na variável global para filtro
+        exibirBarcos(dadosJson);
     } catch (error) {
         console.error("Erro ao carregar embarcações:", error);
     }
 }
 
-
 // Chamar ao carregar a página
 document.addEventListener("DOMContentLoaded", () => {
     carregarEmbarcacoes();
+    mostrarUsuario();
 });

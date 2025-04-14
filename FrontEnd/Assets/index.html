@@ -29,10 +29,10 @@
         <div class="filtro"><input type="text" id="filtroCaptador" placeholder="Captador"></div>
         <div class="filtro"><input type="text" id="filtroProprietario" placeholder="Proprietário"></div>
         <div class="filtro"><input type="text" id="filtroLocal" placeholder="Local"></div>
-        <div class="filtro"><input type="text" id="filtroPrecoMin" placeholder="De R$"></div>
-        <div class="filtro"><input type="text" id="filtroPrecoMax" placeholder="Até R$"></div>
+        <div class="filtro"><input type="number" id="filtroPrecoMin" placeholder="De R$"></div>
+        <div class="filtro"><input type="number" id="filtroPrecoMax" placeholder="Até R$"></div>
 
-        <button class="botao-busca" id="btnBuscar" onclick="filtrarTabela()">🔍 Buscar</button>
+        <button class="botao-busca" id="btnBuscar" onclick="filtrarBarcos()">🔍 Buscar</button>
     </section>
 
     <div class="cadastro-container">
@@ -58,6 +58,7 @@
                     <th>PROPRIETÁRIO</th>
                     <th>LOCAL</th>
                     <th>ANÚNCIO</th>
+                    <th>AÇÕES</th> <!-- Só aparece para admin -->
                 </tr>
             </thead>
             <tbody id="corpoTabela">
@@ -66,14 +67,13 @@
         </table>
     </section>
 
+    <script>
+        window.onload = function () {
+            carregarBarcos();
+            mostrarUsuario();
+        };
+    </script>
+
 </body>
 
-<script>
-    window.onload = function () {
-        carregarBarcos();
-        mostrarUsuario();
-    }
-</script>
-
 </html>
-

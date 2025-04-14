@@ -1,44 +1,44 @@
 [
-  {
-      "foto": "https://via.placeholder.com/100",
-      "sku": "001",
-      "estaleiro": "Azimut",
-      "modelo": "Flybridge 50",
-      "valor": "R$ 3.500.000",
-      "ano": "2021",
-      "motor": "Volvo Penta",
-      "combustivel": "Diesel",
-      "horas": "120",
-      "proprietario": "João Silva",
-      "local": "Angra dos Reis - RJ",
-      "anuncio": "https://sitebarco.com/azimut50"
-  },
-  {
-      "foto": "https://via.placeholder.com/100",
-      "sku": "002",
-      "estaleiro": "Intermarine",
-      "modelo": "55 Offshore",
-      "valor": "R$ 4.200.000",
-      "ano": "2020",
-      "motor": "Caterpillar",
-      "combustivel": "Diesel",
-      "horas": "200",
-      "proprietario": "Carlos Mendes",
-      "local": "Florianópolis - SC",
-      "anuncio": "https://sitebarco.com/intermarine55"
-  },
-  {
-      "foto": "https://via.placeholder.com/100",
-      "sku": "003",
-      "estaleiro": "Schäfer",
-      "modelo": "Phantom 400",
-      "valor": "R$ 2.800.000",
-      "ano": "2019",
-      "motor": "Yanmar",
-      "combustivel": "Diesel",
-      "horas": "300",
-      "proprietario": "Marcos Lima",
-      "local": "Guarujá - SP",
-      "anuncio": "https://sitebarco.com/schafer400"
-  }
+    {
+        "foto": "caminho/da/imagem.jpg",
+        "sku": "12345",
+        "estaleiro": "Azimut",
+        "modelo": "48 Fly",
+        "valor": "R$ 3.200.000",
+        "ano": "2020",
+        "motor": "Volvo Penta",
+        "combustivel": "Diesel",
+        "horas": "250",
+        "proprietario": "João",
+        "local": "Angra dos Reis",
+        "anuncio": "https://link-do-anuncio.com"
+      },
+      {
+        "foto": "caminho/da/imagem.jpg",
+        "sku": "12345",
+        "estaleiro": "Schaefer",
+        "modelo": "48 Fly",
+        "valor": "R$ 3.200.000",
+        "ano": "2020",
+        "motor": "Volvo Penta",
+        "combustivel": "Diesel",
+        "horas": "250",
+        "proprietario": "João",
+        "local": "Angra dos Reis",
+        "anuncio": "https://link-do-anuncio.com"
+      },
+      {
+        "foto": "caminho/da/imagem.jpg",
+        "sku": "12345",
+        "estaleiro": "Focker",
+        "modelo": "48 Fly",
+        "valor": "R$ 3.200.000",
+        "ano": "2020",
+        "motor": "Volvo Penta",
+        "combustivel": "Diesel",
+        "horas": "250",
+        "proprietario": "João",
+        "local": "Angra dos Reis",
+        "anuncio": "https://link-do-anuncio.com"
+      }
 ]
