@@ -1,6 +1,6 @@
 // Lista de usuários
 const usuarios = [
-    { nome: "Danilo", senha: "150105", admin: true },
+    { nome: "danilo", senha: "150105", admin: true },
     { nome: "marcos", senha: "toninha1002", admin: true },
     { nome: "raquel", senha: "toninha1002", admin: false }
 ];
