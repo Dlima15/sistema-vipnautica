@@ -17,7 +17,7 @@ function validarLogin(event) {
     if (user) {
         localStorage.setItem("usuarioLogado", user.nome);
         localStorage.setItem("isAdmin", user.admin);
-        window.location.href = "index.html";
+        window.location.href = "geral.html";
     } else {
         alert("Usuário ou senha incorretos!");
     }
@@ -26,7 +26,7 @@ function validarLogin(event) {
 // Logout
 function logout() {
     localStorage.clear();
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 
 // Mostrar barra superior com dados do usuário

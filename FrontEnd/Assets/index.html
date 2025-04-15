@@ -1,88 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Geral</title>
-    <link rel="stylesheet" href="/FrontEnd/Assets/css/style.css">
-    <script src="./Js/main.js" defer></script>
+    <title>Login - Vendas.Vip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./Js/main.js" defer></script> <!-- Aponta pro JS correto -->
 </head>
+<body>
+    <img src="/FrontEnd/Assets/Img/5bd2b34c435a3d26e17a405c09996dc3.svg" class="boat boat1" alt="Barco navegando">
+    <img src="/FrontEnd/Assets/Img/5bd2b34c435a3d26e17a405c09996dc3.svg" class="boat boat2" alt="Barco navegando">
+    <img src="/FrontEnd/Assets/Img/5bd2b34c435a3d26e17a405c09996dc3.svg" class="boat boat3" alt="Barco navegando">
+    <div class="container">
+        <!-- Formas geométricas no fundo -->
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
 
-<body class="tela-geral">
+        <section class="conteudo">
+            <div class="esquerda">
+                <h1>Bem-vindo ao <span>Vendas.Vip</span></h1>
+                <p>Preencha os dados do login para acessar</p>
 
-    <header>
-        <img src="./Img/1-Logomarca VIP Azul.png" class="logo" alt="Logo VIP Náutica">
-        <div id="bemVindo" class="bem-vindo"></div>
-        <button id="btnLogin" class="botao-login" onclick="window.location.href='login.html'">Login</button>
-    </header>
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" placeholder="danilolima">
 
-    <!-- Seção de Filtros -->
-    <section class="filtros">
-        <div class="filtro"><input type="text" id="filtroEstaleiro" placeholder="Estaleiro"></div>
-        <div class="filtro"><input type="text" id="filtroModelo" placeholder="Modelo"></div>
-        <div class="filtro"><input type="text" id="filtroAno" placeholder="Ano"></div>
-        <div class="filtro"><input type="text" id="filtroMotor" placeholder="Motor"></div>
-        <div class="filtro"><input type="text" id="filtroCombustivel" placeholder="Combustível"></div>
-        <div class="filtro"><input type="text" id="filtroHoras" placeholder="Horas"></div>
-        <div class="filtro"><input type="text" id="filtroValor" placeholder="Valor"></div>
-        <div class="filtro"><input type="text" id="filtroProprietario" placeholder="Proprietário"></div>
-        <div class="filtro"><input type="text" id="filtroLocal" placeholder="Local"></div>
-        <div class="filtro"><input type="number" id="filtroPrecoMin" placeholder="De R$"></div>
-        <div class="filtro"><input type="number" id="filtroPrecoMax" placeholder="Até R$"></div>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="**********">
 
-        <button class="botao-busca" id="btnBuscar" onclick="filtrarBarcos()">🔍 Buscar</button>
-    </section>
+                <button onclick="validarLogin(event)">ENTRAR</button>
+            </div>
 
-    <div class="cadastro-container">
-        <button class="botao-cadastro" id="btnCadastrar" onclick="window.location.href='cadastro.html'">
-            ➕ Cadastrar Nova Embarcação
-        </button>
+            <div class="direita">
+                <img src="./Img/1-Logomarca VIP Azul.png" alt="Logo VIP Náutica" class="logo">
+            </div>
+        </section>
     </div>
 
-    <!-- Seção da Tabela -->
-    <section class="tabela">
-        <table>
-            <thead>
-                <tr>
-                    <th>FOTO</th>
-                    <th>SKU</th>
-                    <th>ESTALEIRO</th>
-                    <th>MODELO</th>
-                    <th>VALOR</th>
-                    <th>ANO</th>
-                    <th>MOTOR</th>
-                    <th>COMBUSTÍVEL</th>
-                    <th>HORAS</th>
-                    <th>PROPRIETÁRIO</th>
-                    <th>LOCAL</th>
-                    <th>ANÚNCIO</th>
-                    <th>COPIAR</th>
-                </tr>
-            </thead>
-            <tbody id="corpoTabela">
-                <!-- Conteúdo gerado via JS -->
-            </tbody>
-        </table>
-    </section>
-
-    <script>
-        window.onload = function () {
-            carregarBarcos();
-            mostrarUsuario();
-        };
-
-        function copiarTexto(texto) {
-            navigator.clipboard.writeText(texto)
-                .then(() => {
-                    alert('Descritivo copiado com sucesso!');
-                })
-                .catch(err => {
-                    console.error('Erro ao copiar:', err);
-                });
-        }
-    </script>
-
 </body>
-
 </html>
