@@ -37,7 +37,7 @@ function mostrarUsuario() {
         const header = document.querySelector("header");
         const barra = document.createElement("div");
         barra.className = "barra-usuario";
-        barra.innerHTML = `Bem-vindo, <strong>${nome}</strong> (${admin ? 'Admin' : 'Usuário'}) <button onclick="logout()">Sair</button>`;
+        barra.innerHTML = `Bem-vindo, <strong>${nome}</strong> (${admin ? 'Admin' : 'Consultor(a)'}) <button onclick="logout()">Sair</button>`;
         header.appendChild(barra);
     }
 }
@@ -46,16 +46,19 @@ function mostrarUsuario() {
 function aplicarRestricoesParaNaoAdmin() {
     const isAdmin = localStorage.getItem("isAdmin") === "true";
     if (!isAdmin) {
-        // Colunas Proprietário e Local borradas
-        document.querySelectorAll("td:nth-child(10), td:nth-child(11)").forEach(td => {
-            td.style.filter = "blur(4px)";
-            td.classList.add("no-select");
-        });
-        // Coluna Ações sumir
-        document.querySelectorAll("td:nth-child(13)").forEach(td => td.style.display = "none");
-        const thAdmin = document.querySelector("th:nth-child(13)");
-        if (thAdmin) thAdmin.style.display = "none";
-        // Botão cadastrar sumir
+        // Remove colunas Proprietário (10) e Local (11)
+        //document.querySelectorAll("td:nth-child(10), td:nth-child(11)").forEach(td => td.remove());
+       // document.querySelectorAll("th:nth-child(10), th:nth-child(11)").forEach(th => th.remove());
+
+        // Oculta campo de filtro de Local
+        const filtroLocal = document.getElementById("filtroLocal");
+        if (filtroLocal) filtroLocal.parentElement.style.display = "none";
+
+        // Oculta campo de filtro de Proprietário
+        const filtroProprietario = document.getElementById("filtroProprietario");
+        if (filtroProprietario) filtroProprietario.parentElement.style.display = "none";
+
+        // Esconde botão de cadastro se houver
         const btnCadastro = document.querySelector(".cadastro-container");
         if (btnCadastro) btnCadastro.style.display = "none";
     }
@@ -90,10 +93,11 @@ function filtrarBarcos() {
     exibirBarcos(dadosFiltrados);
 }
 // ======================= FIM FUNÇÃO FILTRAR TABELA =======================
-
 function exibirBarcos(lista) {
     const tabela = document.getElementById("corpoTabela");
     if (!tabela) return;
+
+    const isAdmin = localStorage.getItem("isAdmin") === "true";
     tabela.innerHTML = "";
 
     lista.forEach(barco => {
@@ -109,17 +113,14 @@ function exibirBarcos(lista) {
             <td>${barco.motor}</td>
             <td>${barco.combustivel}</td>
             <td>${barco.horas}</td>
-            <td>${barco.proprietario}</td>
-            <td>${barco.local}</td>
+            ${isAdmin ? `<td>${barco.proprietario}</td><td>${barco.local}</td>` : ""}
             <td><a href="${barco.anuncio}" target="_blank">Ver Anúncio</a></td>
-            <td>
-                <button onclick="copiarDescritivo(\`${descritivoSeguro}\`)">📋 Copiar Descritivo</button>
-            </td>
+            <td><button onclick="copiarDescritivo(\`${descritivoSeguro}\`)">📋 Copiar Descritivo</button></td>
         `;
         tabela.appendChild(tr);
     });
 
-    aplicarRestricoesParaNaoAdmin();
+    aplicarRestricoesParaNaoAdmin(); // Continua escondendo os filtros e headers
 }
 
 
