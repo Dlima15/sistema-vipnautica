@@ -6,10 +6,11 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden; /* Para evitar barra de rolagem ao animar */
+    align-items: flex-start; /* Mude para flex-start */
+    /*min-height: 100vh; /* Em vez de height fixa */
 }
+
+
 
 /* Container principal */
 .container {
@@ -183,8 +184,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden; /* Para evitar barra de rolagem ao animar */
+    
 }
 
 /* Container principal */
@@ -351,14 +351,7 @@ button:hover {
 }
 
 
-/* Estilos globais */
-body {
-    font-family: 'Public Sans', sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
+
 
 /* Página de Login */
 .conteudo-principal {
@@ -381,6 +374,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    margin-bottom: 30px; /* Empurra os filtros pra baixo */
 }
 
 .tela-geral .filtros {
@@ -518,15 +512,6 @@ body {
 
 /* CSS (styles.css) */
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 
 .container {
     background: white;
