@@ -58,7 +58,7 @@
                     <th>PROPRIETÁRIO</th>
                     <th>LOCAL</th>
                     <th>ANÚNCIO</th>
-                    <th>AÇÕES</th> <!-- Só aparece para admin -->
+                    <th>COPIAR</th>
                 </tr>
             </thead>
             <tbody id="corpoTabela">
@@ -72,6 +72,16 @@
             carregarBarcos();
             mostrarUsuario();
         };
+
+        function copiarTexto(texto) {
+            navigator.clipboard.writeText(texto)
+                .then(() => {
+                    alert('Descritivo copiado com sucesso!');
+                })
+                .catch(err => {
+                    console.error('Erro ao copiar:', err);
+                });
+        }
     </script>
 
 </body>

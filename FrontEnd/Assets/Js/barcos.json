@@ -1,17 +1,18 @@
 [
     {
-        "foto": "caminho/da/imagem.jpg",
+        "foto": "./img/",
         "sku": "12345",
         "estaleiro": "Azimut",
         "modelo": "48 Fly",
-        "valor": "R$ 3.200.000",
+        "valor": "R$ 2.200.000",
         "ano": "2020",
         "motor": "Volvo Penta",
         "combustivel": "Diesel",
         "horas": "250",
         "proprietario": "João",
         "local": "Angra dos Reis",
-        "anuncio": "https://link-do-anuncio.com"
+        "anuncio": "https://link-do-anuncio.com",
+        "Descritivo": "NX 360\n2021\n2 X 300 MERCRUISER BRAVO THREE\n\nCARRETA RODO ENCALHE\nGUINCHO ELÉTRICO\n..."
       },
       {
         "foto": "caminho/da/imagem.jpg",
@@ -25,20 +26,22 @@
         "horas": "250",
         "proprietario": "João",
         "local": "Angra dos Reis",
-        "anuncio": "https://link-do-anuncio.com"
+        "anuncio": "https://link-do-anuncio.com",
+        "Descritivo": "Schafern2021\n2 X 300 MERCRUISER BRAVO THREE\n\nCARRETA RODO ENCALHE\nGUINCHO ELÉTRICO\n..."
       },
       {
         "foto": "caminho/da/imagem.jpg",
         "sku": "12345",
         "estaleiro": "Focker",
         "modelo": "48 Fly",
-        "valor": "R$ 3.200.000",
+        "valor": "R$ 1.200.000",
         "ano": "2020",
         "motor": "Volvo Penta",
         "combustivel": "Diesel",
         "horas": "250",
         "proprietario": "João",
         "local": "Angra dos Reis",
-        "anuncio": "https://link-do-anuncio.com"
+        "anuncio": "https://link-do-anuncio.com",
+        "Descritivo": "Focker\n2021\n2 X 300 MERCRUISER BRAVO THREE\n\nCARRETA RODO ENCALHE\nGUINCHO ELÉTRICO\n..."
       }
 ]

@@ -62,7 +62,6 @@ function aplicarRestricoesParaNaoAdmin() {
 }
 
 // ======================= INICIO FUNÇÃO FILTRAR TABELA =======================
-
 function filtrarBarcos() {
     const estaleiro = document.getElementById("filtroEstaleiro").value.toLowerCase();
     const modelo = document.getElementById("filtroModelo").value.toLowerCase();
@@ -90,16 +89,15 @@ function filtrarBarcos() {
 
     exibirBarcos(dadosFiltrados);
 }
-
 // ======================= FIM FUNÇÃO FILTRAR TABELA =======================
 
-// Função que exibe os barcos na tabela
 function exibirBarcos(lista) {
     const tabela = document.getElementById("corpoTabela");
     if (!tabela) return;
     tabela.innerHTML = "";
 
     lista.forEach(barco => {
+        const descritivoSeguro = (barco.Descritivo || 'Sem descritivo').replace(/`/g, '\\`');
         const tr = document.createElement("tr");
         tr.innerHTML = `
             <td><img src="${barco.foto}" width="100"></td>
@@ -114,11 +112,24 @@ function exibirBarcos(lista) {
             <td>${barco.proprietario}</td>
             <td>${barco.local}</td>
             <td><a href="${barco.anuncio}" target="_blank">Ver Anúncio</a></td>
+            <td>
+                <button onclick="copiarDescritivo(\`${descritivoSeguro}\`)">📋 Copiar Descritivo</button>
+            </td>
         `;
         tabela.appendChild(tr);
     });
 
     aplicarRestricoesParaNaoAdmin();
+}
+
+
+// Copiar descritivo
+function copiarDescritivo(texto) {
+    navigator.clipboard.writeText(texto).then(() => {
+        alert("Descritivo copiado com sucesso!");
+    }).catch(err => {
+        console.error("Erro ao copiar:", err);
+    });
 }
 
 // Função para buscar os dados JSON e montar a tabela
