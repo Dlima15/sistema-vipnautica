@@ -1,6 +1,6 @@
 [
   {
-    "foto": "./img/NX360.jpeg",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2025/01/IMG-20250129-WA0180-960x577.jpg",
     "sku": "3421",
     "estaleiro": "NX",
     "modelo": "380",
@@ -12,10 +12,10 @@
     "proprietario": "",
     "local": "GUARUJÁ",
     "anuncio": "https://vipnautica.com.br/listings/nx-380-horizon-ano-2021/",
-    "Descritivo": ""
+    "Descritivo": "MODELO NX 380 HORIZON\nTAMANHO 38\nMOTOR 2 X MERCRUISER 350 HP\nCombustível GASOLINA\n\nDescrição\nBANHEIRO COM BOX\nCAMAROTE FECHADO\nADEGA\nFOGÃO\nJOYSTICK\nSKYHOOK\nMESA DO COCKPIT\nCARREGADOR DE BATERIAS\nÁREA GOURMET\nCHURRASQUEIRA\nGUINCHO ELÉTRICO\nCARRETA RODO ENCALHE\nTETO SOLAR HT\nSTROBO\nSOM\nFLAPS\nRÁDIO VHF\nGPS\nFECHAMENTO TOTAL\nTOLDO STOBAG\nTEKA COMPLETA\nMICROONDAS\nTV\nAR CONDICIONADO\nGERADOR"
   },
   {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2022/10/WhatsApp-Image-2022-10-11-at-09.14.25-1-960x577.jpeg",
     "sku": "2655",
     "estaleiro": "SCHAEFER",
     "modelo": "PHANTOM 303",
@@ -24,13 +24,13 @@
     "motor": "2 X VOLVO D-3 250 HP",
     "combustivel": "Diesel",
     "horas": "240",
-    "proprietario": "",
+    "proprietario": "MARCOS/LIAN",
     "local": "UBATUBA",
     "anuncio": "https://vipnautica.com.br/listings/phantom-303-2015-3/",
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-20-at-16.38.26-1110x577.jpeg",
     "sku": "2819",
     "estaleiro": "INTERMARINE",
     "modelo": "INTERMARINE 440 GOLD",
@@ -45,7 +45,7 @@
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2023/12/2.jpeg-768x577.png",
     "sku": "2951",
     "estaleiro": "INTERMARINE",
     "modelo": "INTERMARINE 440 GOLD",
@@ -60,7 +60,7 @@
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2023/07/capa-do-site-1110x577.png",
     "sku": "2972",
     "estaleiro": "SESSA",
     "modelo": "SESSA C-36",
@@ -75,67 +75,7 @@
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
-    "sku": "3075",
-    "estaleiro": "FOCKER",
-    "modelo": "FOCKER 212",
-    "valor": "R$ 248.900",
-    "ano": "2023",
-    "motor": "1 X MERCURY 150 HP",
-    "combustivel": "Gasolina",
-    "horas": "14",
-    "proprietario": "",
-    "local": "nan",
-    "anuncio": "https://vipnautica.com.br/listings/focker-212-2023/",
-    "Descritivo": ""
-  },
-  {
-    "foto": "./img/",
-    "sku": "50",
-    "estaleiro": "REAL",
-    "modelo": "REAL 38",
-    "valor": "R$ 690.000",
-    "ano": "2009",
-    "motor": "2 x Mercruiser 400 Hp",
-    "combustivel": "Diesel",
-    "horas": "",
-    "proprietario": "",
-    "local": "nan",
-    "anuncio": "FOTOS REAL 38",
-    "Descritivo": ""
-  },
-  {
-    "foto": "./img/",
-    "sku": "2000",
-    "estaleiro": "CORAL",
-    "modelo": "CORAL 34 FULL",
-    "valor": "R$ 420.000",
-    "ano": "2011",
-    "motor": "2 X YAMAHA 165 HP",
-    "combustivel": "Gasolina",
-    "horas": "480",
-    "proprietario": "",
-    "local": "nan",
-    "anuncio": "https://vipnautica.com.br/listings/lanha-coral-34-full-2011/",
-    "Descritivo": ""
-  },
-  {
-    "foto": "./img/",
-    "sku": "2002",
-    "estaleiro": "FOCKER",
-    "modelo": "FOCKER 212",
-    "valor": "R$ 250.000",
-    "ano": "2023",
-    "motor": "1 X PRO XS 150 HP",
-    "combustivel": "Gasolina",
-    "horas": "23",
-    "proprietario": "",
-    "local": "GUARUJÁ",
-    "anuncio": "https://vipnautica.com.br/listings/focker-212-2023-2/",
-    "Descritivo": ""
-  },
-  {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2024/11/Focker-388-GT-2-643x577.jpg",
     "sku": "2004",
     "estaleiro": "FOCKER",
     "modelo": "FOCKER 388",
@@ -143,14 +83,14 @@
     "ano": "ZERO ",
     "motor": "2 X 300 HP OU 2 X 350 HP",
     "combustivel": "Gasolina",
-    "horas": "0",
-    "proprietario": "",
-    "local": "nan",
+    "horas": "ZERO",
+    "proprietario": "MARCOS/OESTE MARINE",
+    "local": "FÁBRICA",
     "anuncio": "https://vipnautica.com.br/listings/focker-366-2024/",
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-09-at-16.00.41-1-1110x577.jpeg",
     "sku": "2012",
     "estaleiro": "FOCKER",
     "modelo": "FOCKER 212",
@@ -165,7 +105,7 @@
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2023/10/1.png",
     "sku": "2014",
     "estaleiro": "SEDNA",
     "modelo": "SEDNA 36",
@@ -180,8 +120,8 @@
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
-    "sku": "2016",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2024/12/IMG-20250128-WA0003-1110x577.jpg",
+    "sku": "2014",
     "estaleiro": "PHANTOM",
     "modelo": "PHANTOM 365",
     "valor": "R$ 970.000",
@@ -189,13 +129,13 @@
     "motor": "2 X MERCRUISER QSD 320 HP",
     "combustivel": "Diesel",
     "horas": "340",
-    "proprietario": "",
+    "proprietario": "MARCOS/Ñ",
     "local": "GUARUJÁ",
     "anuncio": "https://vipnautica.com.br/listings/phantom-365-2014-2/",
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-09-at-17.35.39-1110x577.jpeg",
     "sku": "2022",
     "estaleiro": "EVOLVE",
     "modelo": "EVOLVE 360 HT",
@@ -210,7 +150,7 @@
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-12-at-15.43.12-2-1110x577.jpeg",
     "sku": "2024",
     "estaleiro": "FOCKER",
     "modelo": "FOCKER 272",
@@ -220,27 +160,12 @@
     "combustivel": "Gasolina",
     "horas": "54",
     "proprietario": "",
-    "local": "OESTE",
+    "local": "MARCOS/OESTE",
     "anuncio": "https://vipnautica.com.br/listings/focker-272-gto-2022/",
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
-    "sku": "3075",
-    "estaleiro": "FOCKER",
-    "modelo": "FOCKER 212",
-    "valor": "R$ 248.900",
-    "ano": "2023",
-    "motor": "1 X MERCURY 150 PRO XS",
-    "combustivel": "Gasolina",
-    "horas": "-",
-    "proprietario": "",
-    "local": "OESTE",
-    "anuncio": "https://vipnautica.com.br/listings/focker-212-2023/",
-    "Descritivo": ""
-  },
-  {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2023/11/sessa-c-36-1-1024x577.jpeg",
     "sku": "3079",
     "estaleiro": "SESSA",
     "modelo": "SESSA C-36",
@@ -255,7 +180,7 @@
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2023/12/1-2-1024x577.jpeg",
     "sku": "3089",
     "estaleiro": "SEDNA",
     "modelo": "SEDNA 33",
@@ -285,7 +210,7 @@
     "Descritivo": "MODELO AZIMUT 74\nTAMANHO 74\nMOTOR 2 X MAN 1400 HP\nCombustível DIESEL\nHoras de Uso 156\n\nDescrição\ntelevisão com lift no móvel do flybridge\ntelevisão do salão maior 55”\ntoldo retrátil elétrico stobag na praça de popa e no flybridge\nrevestimento Propspeed\nrevestimento Coppercoat\npersianas elétricas no salão\nmesa em mármore na praça de proa\nmesa em mármore na praça de popa\npar de mesas em mármore no flybridge\nluzes submergíveis 16 unidades\nluzes adicionais no teto do passadiço\nlounge de popa\njoystick de manobra\njoystick terceiro comando\nstern thruster\ngeladeira e freezer extra na cabine de tripulação\nfechamento total flybridge e praça de popa\ndomo extra STV60\nbanheiros inclusive na cabine de tripulação\nducha higiênica em todos\nRaymarine\ncâmeras de monitoramento\ncortinas blackouts elétricos em todas as cabines\nauto falantes extras na popa do flybridge\nautomação total de luzes\ncortinas\nsom e televisão\nrevestimento em teca piso flybridge\npassadiços laterais e proa\npassarela telescópica hidráulica\npassarela telescópica hidráulica\nduas adegas 12 garrafas\ninternet starlink\nmesa com sistema elétrico no flybridge\npraça de popa\nluminárias tipo pedestal na\nicemaker no flybridge\nestabilizador Seakeeper"
   },
   {
-    "foto": "./img/",
+    "foto": "https://vipnautica.com.br/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-27-at-12.50.46-1-1110x577.jpeg",
     "sku": "3124",
     "estaleiro": "PHANTOM",
     "modelo": "PHANTOM 365",
@@ -300,7 +225,7 @@
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://www.fibrafort.com.br/pt/barcos-e-lanchas-focker-188-joy",
     "sku": "OE",
     "estaleiro": "FOCKER",
     "modelo": "FOCKER 188 JOY",
@@ -308,14 +233,14 @@
     "ano": "2024",
     "motor": "1 X 100 HP",
     "combustivel": "Gasolina",
-    "horas": "0",
+    "horas": "ZERO",
     "proprietario": "",
     "local": "OESTE MARINE",
-    "anuncio": "https://oestemarine.com.br/lancha-focker-188-joy/",
+    "anuncio": "https://www.fibrafort.com.br/pt/barcos-e-lanchas-focker-188-joy",
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://www.fibrafort.com.br/uploads/produtos/banner/pt/29/thumbs/1920x550-212-banner-site-desktop.webp",
     "sku": "OE",
     "estaleiro": "FOCKER",
     "modelo": "FOCKER 212 FX",
@@ -323,14 +248,14 @@
     "ano": "2024",
     "motor": "1 X MERCURY 1115 HP",
     "combustivel": "Gasolina",
-    "horas": "0",
+    "horas": "ZERO",
     "proprietario": "",
     "local": "OESTE MARINE",
-    "anuncio": "https://oestemarine.com.br/focker-212/",
+    "anuncio": "https://www.fibrafort.com.br/pt/barcos-e-lanchas-focker-212-",
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://www.fibrafort.com.br/uploads/produtos/banner/pt/22/thumbs/1920x550-242GTC-banner-site-desktop.webp",
     "sku": "OE",
     "estaleiro": "FOCKER",
     "modelo": "FOCKER 242 GTC",
@@ -338,14 +263,14 @@
     "ano": "2024",
     "motor": "1 X MERCRUISER 250 HP",
     "combustivel": "Gasolina",
-    "horas": "0",
+    "horas": "ZERO",
     "proprietario": "",
     "local": "OESTE MARINE",
-    "anuncio": "https://oestemarine.com.br/lancha-focker-242gtc/",
+    "anuncio": "https://www.fibrafort.com.br/pt/barcos-e-lanchas-focker-242-gtc",
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://www.fibrafort.com.br/uploads/produtos/banner/pt/8/thumbs/1920x550-242gto-banner-site-desktop.webp",
     "sku": "OE",
     "estaleiro": "FOCKER",
     "modelo": "FOCKER 242 GTO",
@@ -353,14 +278,14 @@
     "ano": "2024",
     "motor": "1 X MERCRUISER 4.5 DTS 250 HP",
     "combustivel": "Gasolina",
-    "horas": "0",
+    "horas": "ZERO",
     "proprietario": "",
     "local": "OESTE MARINE",
-    "anuncio": "https://oestemarine.com.br/lancha-focker-242gto/",
+    "anuncio": "https://www.fibrafort.com.br/pt/barcos-e-lanchas-focker-242-gtO",
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://www.fibrafort.com.br/uploads/produtos/banner/pt/10/thumbs/1920x550-255-banner-site-desktop.webp",
     "sku": "OE",
     "estaleiro": "FOCKER",
     "modelo": "FOCKER 255 GTO",
@@ -368,14 +293,14 @@
     "ano": "2024",
     "motor": "1 X 220 HP",
     "combustivel": "Gasolina",
-    "horas": "0",
+    "horas": "ZERO",
     "proprietario": "",
     "local": "OESTE MARINE",
-    "anuncio": "https://oestemarine.com.br/focker-255-gto/",
+    "anuncio": "https://www.fibrafort.com.br/pt/barcos-e-lanchas-focker-255-gto",
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://www.fibrafort.com.br/uploads/produtos/banner/pt/16/thumbs/1920x550-272-gto-banner-site-desktop.webp",
     "sku": "OE",
     "estaleiro": "FOCKER",
     "modelo": "FOCKER 272 GTO",
@@ -383,14 +308,14 @@
     "ano": "2024",
     "motor": "1 X MERCRUISER 300 HP",
     "combustivel": "Gasolina",
-    "horas": "0",
+    "horas": "ZERO",
     "proprietario": "",
     "local": "OESTE MARINE",
-    "anuncio": "https://oestemarine.com.br/focker-272-gto/",
+    "anuncio": "https://www.fibrafort.com.br/pt/barcos-e-lanchas-focker-272-gto",
     "Descritivo": ""
   },
   {
-    "foto": "./img/",
+    "foto": "https://www.fibrafort.com.br/pt/barcos-e-lanchas-focker-300-gran-turismo-",
     "sku": "OE",
     "estaleiro": "FOCKER",
     "modelo": "FOCKER 300 GT",
@@ -398,7 +323,7 @@
     "ano": "2024",
     "motor": "2 X MERCRUISER 300 HP",
     "combustivel": "Gasolina",
-    "horas": "0",
+    "horas": "ZERO",
     "proprietario": "",
     "local": "OESTE MARINE",
     "anuncio": "https://oestemarine.com.br/focker-300-gts/",
