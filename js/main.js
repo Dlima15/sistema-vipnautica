@@ -3,7 +3,7 @@ const usuarios = [
     { nome: "danilo", senha: "150105", admin: true },
     { nome: "marcos", senha: "toninha1002", admin: true },
     { nome: "raquel", senha: "toninha1002", admin: false },
-    { nome: "Rodrigo", senha: "Rodrigovip10", admin: false },
+    { nome: "rodrigo", senha: "Rodrigovip10", admin: false },
 ];
 
 // Variável global para guardar os dados do JSON
